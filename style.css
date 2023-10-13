@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'FontName';
+    src: url(Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'FontName Thin';
+    src: url(Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'FontName Medium';
+    src: url(Roboto-Medium.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-size: 18px;
+    padding: 6px;
+    color: var(--tg-theme-text-color);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 27.8%, rgb(43, 44, 44) 110.2%);
+    user-select: none;
+    font-family: 'FontName';
+    /*background-image: url("bg.jpg");*/
+    /*!*background-position: center;*!*/
+    /*!*background-size: 2400px 482px;*!*/
+    /*background-size: 1200px 241px;*/
+}
+.container {
+    max-width: 390px;
+}
+.inner {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 210px 210px 210px;
+}
+.img {
+    width: 100px;
+}
+.item {
+    text-align: center;
+    background: rgba(137, 61, 4, 0);
+    margin: 6px;
+    padding: 0;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: solid 5px #3f88f7;
+    box-shadow: #000000CD 2px 2px 15px;
+}
+.add-btn, .sub-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    background: brown;
+    border-radius: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .2s linear;
+    margin-top: 3px;
+}
+.usercard {
+    text-align: center;
+}
+.name {
+    font-size: 12px;
+    font-family: 'FontName Medium';
+    font-weight: 600;
+    color: #3f88f7;
+}
+.value {
+    color: white;
+}
