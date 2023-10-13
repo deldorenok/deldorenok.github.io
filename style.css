@@ -19,14 +19,14 @@ body {
     font-size: 18px;
     padding: 6px;
     color: var(--tg-theme-text-color);
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 27.8%, rgb(43, 44, 44) 110.2%);
+    /*background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 27.8%, rgb(43, 44, 44) 110.2%);*/
     user-select: none;
     font-family: 'FontName';
-    /*background-image: url("bg.jpg");*/
-    /*!*background-position: center;*!*/
-    /*!*background-size: 2400px 482px;*!*/
-    /*background-size: 1200px 241px;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("bg.jpg");
+    /*background-size: 2400px 482px;*/
+    background-size: 1200px 241px;
 }
+
 .container {
     max-width: 390px;
 }
@@ -36,7 +36,7 @@ body {
     grid-template-rows: 210px 210px 210px;
 }
 .img {
-    width: 100px;
+    width: 120px;
 }
 .item {
     text-align: center;
@@ -45,8 +45,8 @@ body {
     padding: 0;
     padding-top: 5px;
     border-radius: 10px;
-    border: solid 5px #3f88f7;
-    box-shadow: #000000CD 2px 2px 15px;
+    border: solid 7px #FFF;
+    box-shadow: #000000CD 5px 5px 0;
 }
 .add-btn, .sub-btn {
     display: inline-block;
@@ -67,7 +67,7 @@ body {
     font-size: 12px;
     font-family: 'FontName Medium';
     font-weight: 600;
-    color: #3f88f7;
+    color: #FFF;
 }
 .value {
     color: white;
