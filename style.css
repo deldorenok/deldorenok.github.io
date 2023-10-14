@@ -32,7 +32,6 @@ body {
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("bg.jpg");*/
     /*!*background-size: 2400px 482px;*!*/
     /*background-size: 1200px 241px;*/
-    overflow: hidden;
 }
 
 .container {
