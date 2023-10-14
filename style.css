@@ -89,3 +89,48 @@ body {
     color: white;
     font-size: 14px;
 }
+.area
+{
+    max-width: 380px;
+    min-width: 380px;
+    margin: 0;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    height: 100vh;
+}
+.textarea {
+    border: none;
+    border-radius: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: #555 5px 5px 5px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: grid;
+    width: 338px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#send {
+    text-align: center;
+    background: #d7421a;
+    margin: 6px;
+    border: none;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.name1 {
+    font-size: 30px;
+    font-family: 'FontName Medium';
+    font-weight: 600;
+    color: #d7421a ;
+    /*text-decoration: underline;*/
+}

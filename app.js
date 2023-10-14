@@ -93,11 +93,16 @@ for(let i = 0; i < addBtn.length; i++)
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
     let val = 0;
     for (let j = 0; j < product.length; j++) val += product[j]*products[j][1];
-    let str = prompt("Введите номер кабинета:");
-    for(let i = 0; i < product.length; i++) str += " " + product[i];
-    str += " " + val
-    console.log(str);
-    tg.sendData(str);
+    let str = document.getElementById('text-area').value;
+    tg.MainButton.hide();
+    document.getElementById('inner').style.display = 'none';
+    document.getElementById('area').style.display = '';
+    document.getElementById('send').onclick = function () {
+        for (let i = 0; i < product.length; i++) str += " " + product[i];
+        str += " " + val
+        console.log(str);
+        tg.sendData(str);
+    }
     //при клике на основную кнопку отправляем данные в строковом виде
 });
 
