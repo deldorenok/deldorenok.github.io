@@ -60,7 +60,8 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: #555 5px 5px 5px;
-    backdrop-filter: blur(2px)
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 .add-btn, .sub-btn {
     display: inline-block;
