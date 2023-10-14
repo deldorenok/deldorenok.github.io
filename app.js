@@ -91,7 +91,9 @@ for(let i = 0; i < addBtn.length; i++)
     };
 }
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
-    let str = prompt("Введите номер кабинета:")
+    let val = 0;
+    for (let j = 0; j < product.length; j++) val += product[j]*products[j][1];
+    let str = prompt("Введите номер кабинета:") + " " + val;
     for(let i = 0; i < product.length; i++) str += " " + product[i];
     console.log(str);
     tg.sendData(str);
