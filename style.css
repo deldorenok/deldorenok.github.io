@@ -22,9 +22,12 @@ body {
     /*background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 27.8%, rgb(43, 44, 44) 110.2%);*/
     user-select: none;
     font-family: 'FontName';
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("bg.jpg");
-    /*background-size: 2400px 482px;*/
-    background-size: 1200px 241px;
+    max-width: 390px;
+    background: #FFF;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("bg.jpg");*/
+    /*!*background-size: 2400px 482px;*!*/
+    /*background-size: 1200px 241px;*/
+    overflow: hidden;
 }
 
 .container {
@@ -37,28 +40,29 @@ body {
 }
 .img {
     width: 120px;
+    margin-bottom: 0;
 }
 .item {
     text-align: center;
     background: rgba(137, 61, 4, 0);
     margin: 6px;
     padding: 0;
-    padding-top: 5px;
+    padding-top: 2px;
     border-radius: 10px;
-    border: solid 7px #FFF;
-    box-shadow: #000000CD 5px 5px 0;
+    border: solid 7px #1a325e;
+        box-shadow: #A0A0A0CD 5px 5px 0;
 }
 .add-btn, .sub-btn {
     display: inline-block;
     padding: 5px 10px;
     border: none;
-    background: brown;
+    background: #d7421a;
     border-radius: 10px;
     color: #FFF;
     text-transform: uppercase;
     font-weight: 700;
     transition: background .2s linear;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .usercard {
     text-align: center;
@@ -67,8 +71,12 @@ body {
     font-size: 12px;
     font-family: 'FontName Medium';
     font-weight: 600;
-    color: #FFF;
+    color: #1a325e;
+    margin-top: -10px;
+    text-shadow: #A0A0A0CD 1px 1px 1px;
+    /*text-decoration: underline;*/
 }
 .value {
-    color: white;
+    color: #1a325e;
+    text-shadow: #A0A0A0CD 1px 1px 1px;
 }
