@@ -15,12 +15,17 @@
 
 
 body {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none;
+    user-select: none;
     margin: 0;
     font-size: 18px;
     padding: 6px;
     color: var(--tg-theme-text-color);
     /*background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 27.8%, rgb(43, 44, 44) 110.2%);*/
-    user-select: none;
     font-family: 'FontName';
     max-width: 390px;
     background: #FFF;
@@ -31,21 +36,23 @@ body {
 }
 
 .container {
-    max-width: 390px;
+    max-width: 380px;
 }
 .inner {
     display: grid;
-    width: 380px;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 210px 210px 210px;
 }
 .img {
     width: 120px;
     margin-bottom: 0;
 }
 .item {
-    text-align: left;
+    text-align: center;
     background: rgba(137, 61, 4, 0);
     margin: 6px;
-    padding: 15px;
+    padding: 0;
+    padding-top: 2px;
     border-radius: 10px;
     border: solid 7px #1a325e;
         box-shadow: #A0A0A0CD 5px 5px 0;
@@ -66,24 +73,15 @@ body {
     text-align: center;
 }
 .name {
-    font-size: 30px;
+    font-size: 12px;
     font-family: 'FontName Medium';
     font-weight: 600;
-    color: #d7421a;
+    color: #1a325e;
+    margin-top: -10px;
     text-shadow: #A0A0A0CD 1px 1px 1px;
     /*text-decoration: underline;*/
 }
 .value {
     color: #1a325e;
-    margin-top: 10px;
     text-shadow: #A0A0A0CD 1px 1px 1px;
-}
-.title {
-    text-align: center;
-    color: #1a325e;
-    font-family: 'FontName Medium';
-    font-weight: 600;
-    font-size: 20px;
-    text-shadow: #A0A0A0CD 1px 1px 1px;
-    margin: 10px;
 }
